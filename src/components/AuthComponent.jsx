@@ -11,6 +11,7 @@ export default function AuthComponent() {
     const dispatch = useDispatch();
   return (
       <>
+          <h1>Welcome to Redux</h1>
           <h3>Please login</h3>
           <input type="text" name="phone" id=""
               value={phone}
