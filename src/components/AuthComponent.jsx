@@ -9,18 +9,14 @@ export default function AuthComponent() {
         dispatch(loginAction(phone));
     }
     const dispatch = useDispatch();
-    return (
-        <>
-            <div className="row">
-                <h3>Please login</h3>
-                <hr />
-                <input type="text" name="phone" id=""
-                    value={phone}
-                    onChange={(e) => setPhone(e.target.value)}
-                />
-                <button onClick={handleClick} >Login</button>
-            </div>
-
-        </>
-    )
+  return (
+      <>
+          <h3>Please login</h3>
+          <input type="text" name="phone" id=""
+              value={phone}
+              onChange={(e)=>setPhone(e.target.value)}
+          />
+          <button onClick={handleClick} >Login</button>
+      </>
+  )
 }
