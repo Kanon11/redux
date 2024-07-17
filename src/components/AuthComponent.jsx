@@ -12,7 +12,6 @@ export default function AuthComponent() {
   return (
       <>
           <h3>Please login</h3>
-          <hr />
           <input type="text" name="phone" id=""
               value={phone}
               onChange={(e)=>setPhone(e.target.value)}
